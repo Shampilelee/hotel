@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/scss/login/style.css">
+    <!--Google Fonts and Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    
+    <div class="login_center">
+
+      <!-- big screen -->
+      <div class="login_slider" id="big_screen">
+
+        <!-- SIGN-IN FORM -->
+        <form action="" method="post" class="login_form">
+          <div class="title">Welcome <span>Back</span></div>
+          <div class="subtitle">Sign in to your account</div>
+
+          <span class="inputf">
+            <input type="email" class="input" placeholder="Email" required/>
+            <span class="label">Email</span>
+          </span>
+          <span class="inputf">
+            <input type="password" class="input" placeholder="Password" required/>
+            <span class="label">Password</span>
+          </span>
+          <button type="submit">Sign In</button>
+        </form>
+
+
+        <!-- SIGN-UP FORM -->
+        <form action="" class="hidden" method="post">
+          <div class="title">Get <span>Started</span></div>
+          <div class="subtitle">Create an account</div>
+
+          <span class="inputf">
+            <input type="text" class="input" placeholder="Name" required/>
+            <span class="label">Name</span>
+          </span>
+          <span class="inputf">
+            <input type="email" class="input" placeholder="Email" required/>
+            <span class="label">Email</span>
+          </span>
+          <span class="inputf">
+            <input type="number" class="input" placeholder="Phone" required/>
+            <span class="label">Phone</span>
+          </span>
+          <span class="inputf">
+            <input type="password" class="input" placeholder="Password" required/>
+            <span class="label">Password</span>
+          </span>
+          <button type="reset" id="reset_Btn">Reset</button>
+          <button type="submit" id="submit_Btn">Sign Up</button>
+        </form>
+
+        <div class="card">
+          <div class="head">
+            <div class="name">Ocean <span>Company</span></div>
+          </div>
+
+          <div class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+            voluptate minus reprehenderit ex voluptates deleniti beatae ea,
+            ratione provident soluta sint debitis facere quibusdam
+            necessitatibus.
+          </div>
+          
+          <div class="btn">
+            New User? <button type="button" onclick="move(1)">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- small screen -->
+      <div id="small_screen">
+        <!-- FORMS -->
+
+        <div id="fm1" class="">
+          <!-- FORM 1 -->
+
+          <!-- SIGN-IN FORM -->
+          <form action="" method="post">
+            <div class="title">Welcome <span>Back</span></div>
+            <div class="subtitle">Sign in to your account</div>
+
+            <span class="inputf">
+              <input type="email" class="input" placeholder="Email" required/>
+              <span class="label">Email</span>
+            </span>
+            <span class="inputf">
+              <input type="password" class="input" placeholder="Password" required/>
+              <span class="label">Password</span>
+            </span>
+            <button type="submit">Sign In</button>
+            <span class="signup" onclick="form_Num(1)">signup</span>
+          </form>
+        </div>
+
+        <div id="fm2">
+          <!-- FORM 2 -->
+
+          <!-- SIGN-UP FORM -->
+          <form action="" method="post">
+            <div class="title">Get <span>Started</span></div>
+            <div class="subtitle">Create an account</div>
+
+            <span class="inputf">
+              <input type="text" class="input" placeholder="Name" required/>
+              <span class="label">Name</span>
+            </span>
+            <span class="inputf">
+              <input type="email" class="input" placeholder="Email" required/>
+              <span class="label">Email</span>
+            </span>
+            <span class="inputf">
+              <input type="number" class="input" placeholder="Phone" required/>
+              <span class="label">Phone</span>
+            </span>
+            <span class="inputf">
+              <input type="password" class="input" placeholder="Password" required/>
+              <span class="label">Password</span>
+            </span>
+            <button type="reset" id="reset_Btn">Reset</button>
+            <button type="submit" id="submit_Btn">Sign Up</button>
+            <span class="signup" onclick="form_Num(2)">signin</span>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+
+    <!-- MENU -->
+    <header class="big_screen">
+
+      <div class="logo">
+          LOGO
+          <img src="" alt="" srcset="">
+      </div>
+
+      <nav>
+          <a href="index.html">Home</a>
+          <a href="./booking.html">Booking</a>
+          <a href="./login.html">Login</a>
+          <a href="./contact.html">Contact</a>
+      </nav>
+
+    </header>
+
+
+    <header class="small_screen">
+        <div class="menu_btn">
+            <span class="menu_btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+            <ul class="menu_nav">
+                <!-- <li class="menu_nav__item ">
+                    <a href="index.php" class="menu_nav__link">
+                    <?php
+                        if (isset($_SESSION["username"])) {
+                            echo $_SESSION["username"];
+                        } else {
+                            null;
+                        }
+                    ?>
+                    </a>
+                </li> -->
+
+                <li class="menu_nav__item">
+                    <a href="./index.html" class="menu_nav__link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="menu_nav__item">
+                    <a href="./booking.html" class="menu_nav__link">
+                        Booking
+                    </a>
+                </li>
+
+                <!-- <li class="menu_nav__item">
+                    <a href="login.php" class="menu_nav__link">
+                        <?php
+                            if (isset($_SESSION["username"])) {
+                                null;
+                            } else {
+                                echo "login";
+                            }
+                        ?>
+                    </a>
+                </li>
+
+                <li class="menu_nav__item">
+                    <a href="logout.php" class="menu_nav__link">
+                        <?php
+                            if (isset($_SESSION["username"])) {
+                                echo "LOGOUT";
+                            } else {
+                                null;
+                            }
+                        ?>
+                    </a>
+                </li> -->
+
+                <li class="menu_nav__item active">
+                    <a href="./login.html" class="menu_nav__link">
+                        Login
+                    </a>
+                </li>
+
+                <li class="menu_nav__item">
+                    <a href="./contact.html" class="menu_nav__link">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- FOOTER -->
+    <footer class="login_Footer">
+      <h5>
+          © <span id="year"></span> AWS HOTEL Designed By 
+          <span id="global_Dev">
+              GlobalDEV
+          </span>
+      </h5>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

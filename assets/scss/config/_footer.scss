@@ -1,0 +1,107 @@
+
+
+// INDEX
+.index_Footer {
+    // BLUR BACKGROUND
+    background-color: rgba(77, 72, 72, 0.123);
+    backdrop-filter: blur(3px);
+
+    // Fill Filter With Blur
+    padding: 0.1px;
+
+    h5 {
+        color: white;
+    }
+
+    #year {
+        color: rgb(253, 238, 31);
+    }
+
+    #global_Dev {
+        color: rgb(212, 209, 32);
+    }
+}
+
+
+
+// LOGIN
+/* FOOTER */
+.login_Footer {
+    text-align: center;
+    background-color: rgba(77, 72, 72, 0.123);
+    -webkit-backdrop-filter: blur(7px);
+            backdrop-filter: blur(7px);
+    padding: 0.1px;
+  
+    background: transparent;
+  
+    h5 {
+      color: rgb(0, 0, 0);
+    }
+    #year {
+      color: rgb(255, 255, 255);
+    }
+    #global_Dev {
+      color: rgb(189, 15, 131);
+    }
+}
+  
+
+
+// CONTACT
+.contact_Footer {
+    // BLUR BACKGROUND
+    background-color: rgba(77, 72, 72, 0.123);
+    backdrop-filter: blur(7px);
+
+    text-align: center;
+
+    // Fill Filter With Blur
+    padding: 0.1px;
+
+    h5 {
+        color: rgb(0, 0, 0);
+    }
+
+    #year {
+        color: rgb(255, 255, 255);
+    }
+
+    #global_Dev {
+        color: rgb(240, 236, 24);
+    }
+}
+
+
+
+// BOOKING
+// FOOTER
+.booking_Footer {
+    // BLUR BACKGROUND
+    background-color: rgba(253, 136, 82, 0.13);;
+    backdrop-filter: blur(7px);
+
+    text-align: center;
+
+    // Fill Filter With Blur
+    padding: 0.1px;
+
+    h5 {
+        color: rgb(0, 0, 0);
+    }
+
+    #year {
+        color: rgb(255, 255, 255);
+    }
+
+    #global_Dev {
+        color: rgb(240, 236, 24);
+    }
+}
+
+
+
+
+
+
+

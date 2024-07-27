@@ -1,0 +1,57 @@
+
+
+@import '../config/config';
+
+body {
+    height: 100%;
+    padding-top: 40vh;
+    align-items: center;
+    text-align: center;
+    background: 
+        // Blur from left to right
+        linear-gradient(
+            to right,
+            rgba($primary_color, 0.9),
+            rgba($primary_color, 0.3)
+        ),
+        url(/assets/img/hotelmain.jpg) center top;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+    background-color: #cccccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    width: 100%;
+    height: 100vh;
+    line-height: 80vh;
+    text-align: center;
+    display: block;
+    font-size: 60px;
+    color: #ffffff;
+    font-size: 7vw;
+    font-weight: 100;
+    transition: all 1.2s ease-in-out;
+}
+
+.small_screen {
+    visibility: hidden
+}
+
+.big_screen {
+    visibility: visible
+}
+
+@import '../config/header';
+
+@import './home';
+@import './img_slider';
+
+@import '../config/footer';
+@import '../config/responsive';
+
+
+

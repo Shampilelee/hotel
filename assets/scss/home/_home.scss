@@ -1,0 +1,367 @@
+
+/* background: 
+    linear-gradient(
+        to right,
+        rgba($primary_color, 0.9),
+        rgba($primary_color, 0.3)
+    ), 
+    url(/assets/img/aboutME.jpg) center top;
+background-size: cover;
+background-attachment: fixed; */
+
+.home {
+    background: #000000;
+    opacity: 90%;
+    border: none;
+    border-radius: 0px 60px 0px 0px;
+
+
+
+    .elements {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        
+
+        a {
+            position:relative;
+            text-decoration: none;
+            color: $text_color;
+            text-align: center;
+        }
+        
+        .element {
+            display: flex;
+            // CENTER ON X-AXIS(-)
+            justify-content: center;
+            // CENTER ON Y-AXIS(|)
+            align-items: center;
+
+            height: 200px;
+            width: 300px;
+            margin: 50px;
+
+            border: none;
+            border-radius: 0px 40px 0px 0px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        
+            &:hover {
+                box-shadow: rgba(153, 153, 187, 0.25) 0px 50px 100px -20px,
+                rgba(235, 206, 206, 0.3) 0px 30px 60px -30px,
+                rgba(164, 170, 175, 0.35) 0px -2px 6px 0px inset;
+            }
+        }
+
+        h4 {
+            font-size: 0.9rem;
+            padding: 7px;
+        }
+        
+        /*
+            ACCESS ELEMENTS WITH THE CLASS NAME OF ".block"
+        */
+        .element:nth-child(1) {
+            /* background: rgb(232, 88, 67); */
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/aboutME.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(2) {
+            /* background: rgb(26, 84, 207); */
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/aboutME.jpg) center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .element:nth-child(3) {
+            background: rgb(36, 217, 127);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/aboutME.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(4) {
+            background: rgb(157, 86, 247);
+            width: 700px;
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/aboutME.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+            color: #000;
+        }
+        .element:nth-child(5) {
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/booking.jpg) center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .element:nth-child(6) {
+            background: rgb(26, 84, 207);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/CONTACT_US.jpg) center top;
+            background-size: cover;
+            background-attachment: fixed;
+
+            color: #000;
+        }
+        .element:nth-child(7) {
+            background: rgb(157, 86, 247);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/ECOMOMY.jpg) center top;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .element:nth-child(8) {
+            background: rgb(36, 217, 127);
+            width: 700px;
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/EXECUTIVE.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(9) {
+            background: rgb(232, 88, 67);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/LOGIN.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(10) {
+            background: rgb(250, 201, 82);
+            width: 700px;
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/standard_1.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(11) {
+            background: rgb(26, 84, 207);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/hotelmain.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(12) {
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/booking.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(13) {
+            background: rgb(157, 86, 247);
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/CONTACT_US.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(14) {
+            background: rgb(250, 201, 82);
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/CONTACT_US.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(15) {
+            background: rgb(232, 88, 67);
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/ECOMOMY.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(16) {
+            background: rgb(36, 217, 127);
+            width: 700px;
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/EXECUTIVE.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(17) {
+            background: rgb(157, 86, 247);
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/hotelmain.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(18) {
+            background: rgb(26, 84, 207);
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/LOGIN.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(19) {
+            background: rgb(250, 201, 82);
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/room.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        .element:nth-child(20) {
+            background: rgb(232, 88, 67);
+            width: 700px;
+            background: rgb(36, 217, 127);
+            background: rgb(250, 201, 82);
+            background: 
+                // Blur from left to right
+                /* linear-gradient(
+                    to right,
+                    rgba($primary_color, 0.9),
+                    rgba($primary_color, 0.3)
+                ), */
+                url(/assets/img/standard_1.jpg) center top;
+            background-size: cover;
+            /* background-attachment: fixed; */
+        }
+        
+    }
+}
+
+
+
+
+
+
+

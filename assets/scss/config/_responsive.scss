@@ -1,0 +1,1056 @@
+
+
+
+// LARGE - max-width: 1024px
+@include media_lg {
+
+    // BOOKING - RIGHT ITEM
+    .item {
+    
+        img {
+            width: 300px;
+        }
+    
+        button {
+            background: transparent;
+            color: white;
+            border: solid 1px white;
+            width: 16vw;
+        } 
+    
+        &::before {
+            left: -112%;
+        }
+    }
+
+    // BOOKING - RIGHT ITEM - FORM
+    form {
+        width: 390px;
+        height: 450px;
+      
+        .head {
+          margin-bottom: 5px;
+        }
+          
+        .btn {
+          width: 330px;
+          background: dodgerblue;
+          color: white;
+          outline: none;
+          border: none;
+          border-radius: 3mm;
+          cursor: pointer;
+          font-weight: 500;
+          margin-top: 2px;
+      
+          & span {
+            transition: 0.25s;
+          }
+          &:hover span {
+            transform: translateX(10px);
+          }
+        }
+      
+        #reset_btn {
+          margin-bottom: 3px;
+        }
+    }
+
+    // BOOKING - LEFT ITEM
+    .left-item {
+        .title {
+            font-size: 65px;
+        }
+    
+        #rooms {
+            font-size: 65px;
+        }
+    }
+}
+
+
+
+// MEDIUM - max-width: 768px { TABLET }
+@include media_md {
+    
+  /* home/index - image slider */
+  // img_slider
+  // Title
+  .center {
+  
+      .title {
+          font-size: 30px;
+          margin-bottom: 10px;
+      
+          & span {
+              font-size: 30px;
+          }
+      }
+  }
+  // Buttons
+  .carousel {
+      // space between image-slides and buttons
+      padding-top: 25px;
+  
+      .controls {
+          button {
+              span {
+                  font-size: 17px;
+              }
+          }
+      }
+  }
+  // Slides
+  .slide-center {
+      .slider {
+          // IMAGE BOX
+          .slide {
+              width: 120px;
+              height: 155px;
+      
+              // IMAGE
+              img {
+                  width: 120px;
+                  height: 155px;
+              }
+      
+              // ACTIVE BOX
+              &.active {
+                  width: 250px;
+                  height: 250px;
+          
+                  // ACTIVE IMG
+                  img {
+                      width: 250px;
+                      height: 250px;
+                  }
+              }
+          }
+      }
+  }
+
+
+  /* BOOKING */
+  .top {
+      font-size: 70px;
+  }
+  // RIGHT ELEMENTS
+  .item {
+      width: 100%;
+      height: 100%;
+
+      button {
+          padding: 10px 10px;
+          font-size: 11px;
+          margin-top: 50px;
+      }
+
+      &::before {
+          left: -100%;
+          width: 100%;
+      }
+
+      &.active {
+          img {
+              width: 200px;
+              border-radius: 10%;
+          }
+      }
+  }
+  // FORM ELEMENT
+  .correct {
+    #collect_Date {
+      font-size: 10px;
+      font-weight: 700;
+    }
+  }
+  form {
+      width: 250px;
+      height: 340px;
+    
+      // TITLE
+      .head {
+        margin-bottom: 0px;
+        .title {
+          font-size: 17px;
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+        
+      .btn {
+        width: 190px;
+        height: 30px;
+        background: dodgerblue;
+        margin-top: 2px;
+        padding: 7px;
+        border-radius: 5px;
+        & span {
+          transition: 0.25s;
+          font-size: 15px;
+        }
+        &:hover span {
+          transform: translateX(10px);
+        }
+      }
+    
+      #reset_btn {
+        margin-bottom: 3px;
+      }
+  }
+  .input-field {
+  
+    .input {
+      height: 30px;
+      font-size: 10px;
+    }
+  
+    .big {
+      width: 360px;
+    }
+    
+    .small {
+      width: 120px;
+    }
+
+    .label {
+      font-size: 7px;
+    }
+  
+  }
+  // LEFT ELEMENTS
+  .left-item {
+    padding: 0 10px;
+
+    .title {
+        font-size: 40px;
+    }
+
+    #rooms {
+        font-size: 30px;
+    }
+    
+    .text {
+        font-size: 15px;
+    }
+  }
+
+
+  /* LOGIN */
+  .login_slider form {
+    width: 300px;
+    height: 400px;
+  
+    padding: 40px 60px;
+    margin: 0 10px;
+  
+    .title {
+      font-size: 15px;
+    }
+  
+    .title span {
+      font-weight: 700;
+    }
+  
+    .subtitle {
+      font-size: 10px;
+      margin-bottom: 25px;
+    }
+  
+    .inputf {
+      margin-bottom: 20px;
+
+      .input {
+        width: 100%;
+        height: 27px;
+        padding: 0 15px;
+        
+        font-size: 12px;
+        color: rgb(246, 249, 255);
+    
+        &::placeholder {
+          font-size: 10px;
+        }
+    
+        // Display and push .label up
+        &:focus + .label {
+          top: -15px;
+          font-size: 9px;
+        }
+      }
+      
+    
+      .label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgb(224, 229, 240);
+        font-size: 11px;
+        font-weight: 500;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.25s ease-out;
+      }
+    }
+  
+  
+    // !! KEEP THE SPACE BETWEEN "&" and "button" !!
+    & button {
+      width: 100%;
+      height: 25px;
+
+      font-size: 12px;
+    }
+  }
+  .login_slider #reset_Btn {
+    margin-bottom: 3px;
+    margin-top: 0px;
+    height: 25px;
+  }
+  .login_slider .card {
+    width: 330px;
+    height: 320px;
+  
+    padding: 40px;
+  
+    .head {
+      font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-bottom: 35px;
+    
+      .name {
+        font-size: 20px;
+        span {
+          font-weight: 600;
+          color: rgb(36, 217, 127);
+        }
+      }
+    }
+  
+    .desc {
+      font-size: 12px;
+    }
+  
+    .btn {
+        font-size: 12px;
+  
+        button {
+            font-size: 12px;
+        }
+    }
+  }
+  // Moving Card Left and Right
+  .card.active {
+    // right: calc(100% - "card width");
+    right: calc(100% - 330px);
+    border-radius: 4mm 0 0 4mm;
+  }
+
+
+  /* CONTACT */
+  .contact_team .title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .contact_team .profile {
+    min-width: 350px;
+    padding-top: 20px;
+    margin: 10px;
+    max-height: 100px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+
+    .details {
+      font-size: 12px;
+    }
+
+    &:focus {
+      max-height: 500px;
+    }
+
+    &:focus #picture {
+      border: 5px solid var(--primary);
+    }
+
+    &:focus .card {
+      display: flex;
+      animation: fade 0.5s ease-in-out;
+    }
+  }
+  .card {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    .head {
+      width: 100%;
+      margin-bottom: 7px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .name {
+        font-size: 10px;
+        font-weight: 200;
+      }
+    }
+
+    .content {
+      font-size: 10px;
+      margin-bottom: 10px;
+
+      .role {
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+
+
+    .icons {
+      height: 2.7vw;
+  
+      a {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+
+        &:hover {
+          background: white;
+          color: var(--primary);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+
+  /* FOOTER */
+  // INDEX - FOOTER
+  .index_Footer {
+    h5 {
+      font-size: 1.5vw;
+    }
+  }
+  // BOOKING - FOOTER
+  .booking_Footer {
+    h5 {
+      font-size: 1.5vw;
+    }
+  }
+  // LOGIN - FOOTER
+  .login_Footer {
+    h5 {
+      font-size: 1.5vw;
+    }
+  }
+  // CONTACT - FOOTER
+  .contact_Footer {
+    h5 {
+      font-size: 1.5vw;
+    }
+  }
+
+  
+  /* HEADER */
+  header {
+    .logo {
+      font-size: 1.5vw;
+    }
+
+    nav {
+      a {
+        font-size: 1.5vw;
+      }
+    }
+  }
+
+} 
+
+
+
+// Small - max-width: 425px
+@include media_sm {
+    
+  /* HEADER */
+  .small_screen {
+    visibility: visible;
+  }
+  .big_screen {
+    visibility: hidden;
+  }
+  header {
+    background-color: transparent;
+  }
+  .menu_btn {
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    top: 1rem;
+    //border: 15px solid gray;
+    cursor: pointer;
+    @include transition_ease;
+    
+
+    // THIS IS RESPONSIBLE FOR THE MIDDLE BAR/LINE
+    &__burger {
+        position: absolute;
+        right: 0.3rem;
+        top: 0.5rem;
+        //border: 15px solid rgb(180, 95, 95);
+        width: 28px;
+        height: 3px;
+        background: set_Text_Color($primary_color);
+        @include transition_ease;
+
+        // THIS IS RESPONSIBLE FOR THE "menu_btn" TOP BAR/LINE (the outer one on top)
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: set_Text_Color($primary_color);
+            @include transition_ease;
+        }
+
+        // THIS IS RESPONSIBLE FOR THE BOTTOM BAR/LINE
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: set_Text_Color($primary_color);
+            @include transition_ease;
+        }
+
+
+
+        // RESPONSIPLE FOR MEMU BUTTON ROTAION, IT'S ASSCIOTED BY JAVASCRIPT "main.js" for functionalityu
+        &.open {
+            transform: rotate(720deg);
+            background: transparent;
+
+            // RESPONSIBLE FOR MENU BAR/LINE AFTER ROTATION ALIGNMENTS
+            // TOP BAR/LINE
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+
+            // BOTTOM BAR/LINE
+            &::after {
+                // restore width
+                width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+
+        }
+    }
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+    
+
+    &.open {
+        visibility: visible;
+    }
+
+    .menu_nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: $primary_color;
+        // remove bullet points
+        list-style-type: none;
+
+        padding-right: 1rem;
+        transform: translateY(-100%);
+        @include transition_ease;
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        &__item {
+            transform: translateX(100vw);
+            @include transition_ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            // TARGETING ACTIVE LINK (PAGE YOU'RE CURRENTLY ON)
+            &.active > a {
+                color: $secondary_color;
+            }
+        }
+
+        &__link {
+            display: inline-block;
+            font-size: 6vw;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            @include transition_ease;
+
+            &:hover {
+                color: $secondary_color;
+            }
+        }
+    }
+  }
+  // FOR LOOP IN SCSS
+  /*
+    MENU ITEMS MOVING INTO CENTER FROM RIGHT SIDE, ONE BY ONE.
+    WE HAVE 4 ITEMS IN THE MENU, THATS WHY WE HAVE "@for $link from 1 through 4".
+  */
+  @for $link from 1 through 4 {
+    // WE'RE ATTACHING ".menu_nav__item" AND THE IT'S CHILDREN USING "nth-child(#{$link})" ONE BY ONE.
+    .menu_nav__item:nth-child(#{$link}) {
+        // ONE EACH LINK WE'RE GOING TO DO A TRANSITION DELAY
+        // SO IT WILL ADD A DELAY TO EACH LINK.
+        transition-delay: ($link * 0.1s) + 0.15s;
+    }
+  }
+  
+
+  // INDEX
+  /* home/index - image slider */
+  // img_slider
+  // Title
+  .center {
+  
+    .title {
+        font-size: 6vw;
+    
+        & span {
+            font-size: 6vw;
+        }
+    }
+  }
+  // Buttons
+  .carousel {
+    // space between image-slides and buttons
+    padding-top: 25px;
+
+    .controls {
+        button {
+            span {
+                font-size: 4vw;
+            }
+        }
+    }
+  }
+  // Slides
+  .slide-center {
+    .slider {
+        // IMAGE BOX
+        .slide {
+            width: 50px;
+            height: 55px;
+    
+            // IMAGE
+            img {
+                width: 50px;
+                height: 55px;
+            }
+    
+            // ACTIVE BOX
+            &.active {
+                width: 90px;
+                height: 120px;
+        
+                // ACTIVE IMG
+                img {
+                    width: 90px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+  }
+
+
+  /* BOOKING */
+  .top {
+    font-size: 8vw;
+  }
+  // RIGHT ELEMENTS
+  .item {
+    width: 100%;
+    height: 100%;
+
+    button {
+      font-size: 2vw;
+      padding: 1.5vw;
+      border: none;
+      background: #fff;
+      color: #000;
+
+
+      &:active {
+        background: transparent;
+        border: solid 1px white;
+        transition: all 0.1s ease-in-out;
+        color: #ffffff;
+      }
+    }
+
+    &::before {
+      left: -100%;
+      width: 100%;
+    }
+
+    &.active {
+      img {
+        width: 40vw;
+        border-radius: 10%;
+      }
+    }
+  }
+  // FORM ELEMENT
+  .correct {
+    #collect_Date {
+      font-size: 1.3vw;
+      font-weight: 700;
+    }
+  }
+  form {
+    width: 40vw;
+    height: 50vw;
+    padding: 10px;
+  
+    // TITLE
+    .head {
+      margin-bottom: 4vw;
+      .title {
+        font-size: 2vw;
+        span {
+          font-size: 2.3vw;
+        }
+      }
+    }
+      
+    .btn {
+      width: 35vw;
+      height: 4.5vw;
+      font-size: 1.5vw;
+      background: dodgerblue;
+      color: white;
+      margin-top: 2px;
+      padding: 1vw;
+      border-radius: 7px;
+      & span {
+        font-size: 1.5vw;
+        transition: 0.25s;
+      }
+      &:active span {
+        transform: translateX(10px);
+      }
+    }
+  
+    #reset_btn {
+      margin-bottom: 3px;
+    }
+  }
+  .input-field {
+    justify-content: center;
+    align-items: center;
+  
+    .input {
+      height: 4.3vw;
+      font-size: 1.5vw;
+    }
+  
+    .big {
+      width: 50vw;
+      margin-top: 1vw;
+    }
+    
+    .small {
+      width: 17.3vw;
+      margin-bottom: -3.3vw;
+    }
+
+    .label {
+      font-size: 1.1vw;
+    }
+  
+  }
+  // LEFT ELEMENTS
+  .left-item {
+    padding: 0 10px;
+
+    .title {
+      font-size: 5vw;
+    }
+
+    #rooms {
+      font-size: 2.7vw;
+    }
+    
+    .text {
+      font-size: 2vw;
+    }
+  }
+
+
+  /* LOGIN */
+  //
+  .login_slider {
+    display: none;
+  }
+  .signup {
+    color: #9bceff;
+    font-size: 2.7vw;
+    text-align: center;
+    display: block;
+  }
+  #small_screen {
+    display: flex;
+
+    /* width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; */
+  }
+
+  #small_screen form {
+
+    width: 70vw;
+    height: 100vw;
+    backdrop-filter: blur(16px) saturate(0%);
+    -webkit-backdrop-filter: blur(16px) saturate(0%);
+    background: rgba(17, 25, 40, 0.75);
+    border-radius: 4mm;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-sizing: border-box;
+  
+    padding: 40px 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 50px 50px 100px -20px,
+      rgba(0, 0, 0, 0.5) 30px 30px 60px -30px,
+      rgba(212, 217, 222, 0.35) 2px -2px 6px 0px inset;
+    z-index: 3;
+    transition: 0.25s ease-in-out;
+  
+    .title {
+      font-size: 3.5vw;
+      color: rgb(246, 249, 255);
+      letter-spacing: 1px;
+      margin-bottom: 0.1vw;
+      font-weight: 300;
+    }
+  
+    .title span {
+      font-weight: 700;
+    }
+  
+    .subtitle {
+      font-size: 2vw;
+      color: rgb(224, 229, 240);
+      letter-spacing: 0.25mm;
+      margin-bottom: 7vw;
+    }
+  
+  
+    .inputf {
+      width: 100%;
+      height: fit-content;
+      box-sizing: border-box;
+      margin-bottom: 5vw;
+      position: relative;
+  
+  
+      .input {
+        width: 100%;
+        height: 5vw;
+        box-sizing: border-box;
+        border: none;
+        outline: 0.5mm solid rgb(200, 200, 220);
+        background: transparent;
+        border-radius: 1.5mm;
+        padding: 0 15px;
+        font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+        font-size: 2vw;
+        color: rgb(246, 249, 255);
+    
+        &::placeholder {
+          color: rgb(175, 180, 190);
+        }
+    
+        &:focus {
+          outline: 0.5mm solid rgb(124, 164, 248);
+        }
+    
+        // Display and push .label up
+        &:focus + .label {
+          top: -2vw;
+          opacity: 1;
+          z-index: 1;
+        }
+    
+        // Remove placeholder on click/force
+        &:focus::placeholder {
+          opacity: 0;
+        }
+    
+        /*
+          If There's no placeholder in your html-form-input?
+          Then Push the .label up and Display it.
+        */
+        input:not(:placeholder-shown) + .label {
+          top: -20px;
+          opacity: 1;
+          z-index: 1;
+        }
+      }
+      
+    
+      .label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: rgb(224, 229, 240);
+        font-size: 1.8vw;
+        font-weight: 500;
+        opacity: 0;
+        z-index: -1;
+        transition: 0.25s ease-out;
+      }
+    }
+  
+  
+    // !! KEEP THE SPACE BETWEEN "&" and "button" !!
+    & button {
+      width: 100%;
+      height: 6vw;
+      background: rgb(36, 217, 127);
+      color: white;
+      border: none;
+      outline: none;
+      border-radius: 1.5mm;
+      font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      font-weight: 500;
+      font-size: 2.7vw;
+      cursor: pointer;
+    }
+
+    & #reset_Btn {
+      background-color: yellowgreen;
+      color: #000;
+      margin-bottom: 2px;
+    }
+  }
+
+
+
+  /* CONTACT */
+  .contact_team .title {
+    font-size: 6vw;
+    font-weight: 700;
+  }
+  .contact_team .profile {
+    min-width: 45vw;
+    padding-top: 20px;
+    margin: 10px;
+    max-height: 100px;
+
+    img {
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .details {
+      font-size: 2vw;
+    }
+
+    &:focus {
+      max-height: 10vw;
+    }
+
+    &:focus #picture {
+      border: 5px solid var(--primary);
+    }
+
+    &:focus .card {
+      display: flex;
+      animation: fade 0.5s ease-in-out;
+    }
+  }
+  .card {
+    width: 40vw;
+    height: 35vw;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    .head {
+      width: 100%;
+      margin-bottom: 2vw;
+
+      img {
+        width: 8vw;
+        height: 5vw;
+      }
+
+      .name {
+        font-size: 2vw;
+        font-weight: 200;
+      }
+    }
+
+    .content {
+      font-size: 2vw;
+      margin-bottom: 2vw;
+
+      .role {
+        font-weight: 700;
+        font-size: 2.7vw;
+      }
+    }
+
+
+    .icons {
+      height: 5.5vw;
+  
+      a {
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+          background: white;
+          color: var(--primary);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+

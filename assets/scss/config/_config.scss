@@ -1,0 +1,100 @@
+
+
+@mixin transition_ease {
+    // Apply to all transitions, half a second, easing in and out.
+    transition: all 0.5s ease-in-out;
+}
+
+// set color
+@function set_Text_Color($color) {
+    @if (lightness($color) > 40%) {
+        @return black;
+    } @else {
+        @return white;
+    }
+}
+
+// MEDIA QEARY \\
+// small phone
+@mixin media_sm {
+    @media screen and (max-width: 425px) {
+        @content;
+    }
+}
+
+// medium
+@mixin media_md {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+// large
+@mixin media_lg {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+// ex-large
+@mixin media_xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+
+
+
+
+// INDEX - HOME
+$primary_color: #272727;
+$secondary_color: #ff652f;
+$text_color: #ffffff;
+
+// ANIMATION OF ELEMENTS
+@keyframes appear {
+    /* START(BEFORE) ELEMENT DISPLAY */
+    from {
+        opacity: 0;
+        clip-path: inset(100% 100% 0 0);
+        /*
+        YOU CAN TRY THESE STYLE OF ANIMATION TO.
+        1. scale: 0.5; 
+        2. transform: translateX(-100px); 
+        */
+    }
+    /* START, BEFORE ELEMENT DISPLAY */ 
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0);
+        /*
+        YOU CAN TRY THESE STYLE OF ANIMATION TO.
+        1. scale: 1; 
+        2. transform: translateX(0px); 
+        */
+    }
+}
+
+/*
+    ANIMATION APPLIED TO CLASS ".block" HERE
+*/
+.element {
+    animation: appear linear;
+    /* 
+        FOR ANIMATION TO HAPPEN WHEN ELEMENTS TRIES TO GET ON PAGE(DISPLAY).
+        BUT, ANIMATIONS ARE TO COMPLETED EVEN WHEN THE ELEMENTS ARE STILL IN THE MIDDLE OF THE SCREEN, 
+        AND THEY ARE COMPLETED WHEN THEY LEAVE THE SCREEN.
+    */
+    animation-timeline: view();
+
+    /* 
+        FOR THAT USE "animation-range: ", AND SET "animation-range: entry 0;" WHICH MAKES THE ANIMATION TO HAPPEN WHEN THE ELEMENT START TO ENTER THE VIEW-PORT(SCREEN).
+        WITH THIS, ELEMENTS GET COMPLETED EVEN BEFORE REACH THE MIDDLE OF THE SCREEN, TO FIX THIS,
+        SET "animation-range: entry 0% cover 40%;" WHICH ENSURES THE ELEMENT COMPLETES ANIMATION, WHEN IT REACHS 40% OF THE SCREENS' HEIGHT.
+    */
+    animation-range: entry 0% cover 40%;
+}
+
+
+

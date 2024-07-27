@@ -1,0 +1,41 @@
+
+header {
+    position: fixed;
+    height: 11vh;
+    width: 100%;
+
+    // keep menu on top
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+
+
+    background-color: rgba(0, 0, 0, 0.568);
+    color: #8ee71a;
+    font-weight: 800;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+    nav {
+        /* background-color: rgba(7, 48, 34, 0.521); */
+        padding-right: 20px;
+
+
+        a {
+            /* background-color: rgb(7, 194, 132); */
+            text-decoration: none;
+            //color: $txt_Color;
+            font-weight: normal;
+            color: azure;
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+}
+
+
