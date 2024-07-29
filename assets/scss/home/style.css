@@ -582,6 +582,9 @@ background-attachment: fixed; */
   .carousel .controls button span {
     font-size: 17px;
   }
+  .slide-center {
+    transform: translateX(calc(50% - 10px));
+  }
   .slide-center .slider .slide {
     width: 120px;
     height: 155px;
@@ -859,8 +862,11 @@ background-attachment: fixed; */
   .small_screen {
     visibility: visible;
   }
+  .small_screen .menu_nav.open {
+    margin-top: 0px;
+  }
   .big_screen {
-    visibility: hidden;
+    display: none;
   }
   header {
     background-color: transparent;
@@ -983,26 +989,30 @@ background-attachment: fixed; */
     font-size: 6vw;
   }
   .carousel {
-    padding-top: 25px;
+    margin-top: -6vw;
   }
   .carousel .controls button span {
     font-size: 4vw;
   }
+  .slide-center {
+    height: 60vw;
+    transform: translateX(calc(50% + 50px));
+  }
   .slide-center .slider .slide {
-    width: 50px;
-    height: 55px;
+    width: 30vw;
+    height: 25vw;
   }
   .slide-center .slider .slide img {
-    width: 50px;
-    height: 55px;
+    width: 30vw;
+    height: 25vw;
   }
   .slide-center .slider .slide.active {
-    width: 90px;
-    height: 120px;
+    width: 40vw;
+    height: 35vw;
   }
   .slide-center .slider .slide.active img {
-    width: 90px;
-    height: 120px;
+    width: 100%;
+    height: 35vw;
   }
   /* BOOKING */
   .top {
@@ -1028,6 +1038,10 @@ background-attachment: fixed; */
   .item::before {
     left: -100%;
     width: 100%;
+    border: none;
+  }
+  .item.active {
+    width: 0%;
   }
   .item.active img {
     width: 40vw;
@@ -1091,16 +1105,20 @@ background-attachment: fixed; */
     font-size: 1.1vw;
   }
   .left-item {
-    padding: 0 10px;
-  }
-  .left-item .title {
-    font-size: 5vw;
-  }
-  .left-item #rooms {
-    font-size: 2.7vw;
-  }
-  .left-item .text {
-    font-size: 2vw;
+    visibility: hidden;
+    /* padding: 0 10px;
+
+    .title {
+      font-size: 5vw;
+    }
+
+    #rooms {
+      font-size: 2.7vw;
+    }
+
+    .text {
+      font-size: 2vw;
+    } */
   }
   /* LOGIN */
   .login_slider {
