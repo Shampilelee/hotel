@@ -33,6 +33,7 @@ header {
   color: #8ee71a;
   font-weight: 800;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 1000;
 }
 header nav {
   /* background-color: rgba(7, 48, 34, 0.521); */
