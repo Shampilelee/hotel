@@ -8,63 +8,97 @@
     .item {
     
         img {
-            width: 300px;
+          width: 30vw;
         }
     
         button {
-            background: transparent;
-            color: white;
-            border: solid 1px white;
-            width: 16vw;
+          background: transparent;
+          color: white;
+          border: solid 1px white;
+          width: 16vw;
+          font-size: 2vw;
         } 
     
         &::before {
             left: -112%;
         }
     }
-
     // BOOKING - RIGHT ITEM - FORM
     form {
-        width: 390px;
-        height: 450px;
-      
-        .head {
-          margin-bottom: 5px;
-        }
-          
-        .btn {
-          width: 330px;
-          background: dodgerblue;
-          color: white;
-          outline: none;
-          border: none;
-          border-radius: 3mm;
-          cursor: pointer;
-          font-weight: 500;
-          margin-top: 2px;
-      
-          & span {
-            transition: 0.25s;
-          }
-          &:hover span {
-            transform: translateX(10px);
+      width: 39vw;
+      height: 45vw;
+    
+      // TITLE
+      .head {
+        margin-bottom: 2vw;
+        .title {
+          font-size: 2.2vw;
+          span {
+            font-size: 2.4vw;
           }
         }
-      
-        #reset_btn {
-          margin-bottom: 3px;
+      }
+        
+      .btn {
+        width: 100%;
+        background: dodgerblue;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 3mm;
+        cursor: pointer;
+        font-size: 2vw;
+        font-weight: 500;
+        margin-top: 2px;
+    
+        & span {
+          transition: 0.25s;
+          font-size: 1.5vw;
         }
+        &:hover span {
+          transform: translateX(10px);
+        }
+      }
+    
+      #reset_btn {
+        margin-bottom: 3px;
+      }
+    }
+    .input-field {
+  
+      .input {
+        height: 4.5vw;
+        font-size: 1.5vw;
+
+        &::placeholder {
+          font-size: 1.5vw;
+        }
+      }
+    
+      .big {
+        width: 100%;
+        margin-top: 0.5vw;
+      }
+      
+      .small {
+        width: 50%;
+      }
+  
+      .label {
+        font-size: 1.1vw;
+      }
+    
     }
 
     // BOOKING - LEFT ITEM
     .left-item {
-        .title {
-            font-size: 65px;
-        }
-    
-        #rooms {
-            font-size: 65px;
-        }
+      .title {
+        font-size: 3vw;
+      }
+  
+      #rooms {
+        font-size: 3vw;
+      }
     }
 }
 
@@ -134,7 +168,7 @@
 
   /* BOOKING */
   .top {
-      font-size: 70px;
+      font-size: 8vw;
   }
   // RIGHT ELEMENTS
   .item {
@@ -142,82 +176,85 @@
       height: 100%;
 
       button {
-          padding: 10px 10px;
-          font-size: 11px;
-          margin-top: 50px;
+        padding: 10px 10px;
+        font-size: 2vw;
+        margin-top: 50px;
       }
 
       &::before {
-          left: -100%;
-          width: 100%;
+        left: -100%;
+        width: 100%;
       }
 
       &.active {
-          img {
-              width: 200px;
-              border-radius: 10%;
-          }
+        img {
+          width: 30vw;
+          border-radius: 10%;
+        }
       }
   }
   // FORM ELEMENT
   .correct {
     #collect_Date {
-      font-size: 10px;
+      font-size: 1vw;
       font-weight: 700;
     }
   }
   form {
-      width: 250px;
-      height: 340px;
-    
-      // TITLE
-      .head {
-        margin-bottom: 0px;
-        .title {
-          font-size: 17px;
-          span {
-            font-size: 20px;
-          }
+    width: 36vw;
+    height: 43vw;
+    padding: 3vw;
+  
+    // TITLE
+    .head {
+      margin-bottom: 3vw;
+      .title {
+        font-size: 2vw;
+        span {
+          font-size: 2.3vw;
         }
       }
-        
-      .btn {
-        width: 190px;
-        height: 30px;
-        background: dodgerblue;
-        margin-top: 2px;
-        padding: 7px;
-        border-radius: 5px;
-        & span {
-          transition: 0.25s;
-          font-size: 15px;
-        }
-        &:hover span {
-          transform: translateX(10px);
-        }
+    }
+      
+    .btn {
+      width: 100%;
+      height: 4vw;
+      background: dodgerblue;
+      margin-top: 0.2vw;
+      padding: 1vw;
+      border-radius: 5px;
+      font-size: 1.7vw;
+      & span {
+        transition: 0.25s;
+        font-size: 1.7vw;
       }
-    
-      #reset_btn {
-        margin-bottom: 3px;
+      &:hover span {
+        transform: translateX(10px);
       }
+    }
+  
+    #reset_btn {
+      margin-bottom: 3px;
+    }
   }
   .input-field {
   
     .input {
-      height: 30px;
-      font-size: 10px;
+      height: 4vw;
+      font-size: 1.2vw;
     }
   
     .big {
-      width: 360px;
+      width: 100%;
+      margin-top: 0.5vw;
     }
     
     .small {
-      width: 120px;
+      width: 50%;
     }
 
     .label {
-      font-size: 7px;
+      font-size: 1vw;
     }
   
   }
@@ -226,15 +263,15 @@
     padding: 0 10px;
 
     .title {
-        font-size: 40px;
+        font-size: 3vw;
     }
 
     #rooms {
-        font-size: 30px;
+        font-size: 3vw;
     }
     
     .text {
-        font-size: 15px;
+        font-size: 1.7vw;
     }
   }
 
@@ -476,7 +513,7 @@
 
 
 
-// Small - max-width: 425px
+// Small - max-width: 425px { MOBILE }
 @include media_sm {
     
   /* HEADER */
@@ -706,17 +743,22 @@
     height: 100%;
 
     button {
-      font-size: 2vw;
-      padding: 1.5vw;
+      display: flex;
+      justify-content: center;
+
+      font-size: 2.9vw;
+      padding: 3vw 20vw 3vw 20vw;
+
+      transition: 0.05s ease-in-out;
+
+      background: #e03f00b6;
       border: none;
-      background: #fff;
-      color: #000;
+      color: #ffffff;
+      font-weight: 800;
 
-
-      &:active {
-        background: transparent;
-        border: solid 1px white;
-        transition: all 0.1s ease-in-out;
+      &:focus {
+        background: #852600b6;
+        border: none;
         color: #ffffff;
       }
     }
@@ -724,51 +766,59 @@
     &::before {
       left: -100%;
       width: 100%;
+      background: none;
       border: none;
     }
 
     &.active {
       width: 0%;
       img {
-        width: 40vw;
+        width: 60vw;
         border-radius: 10%;
+
+        &:active {
+          width: 65vw;
+        }
       }
     }
   }
   // FORM ELEMENT
   .correct {
-    #collect_Date {
-      font-size: 1.3vw;
-      font-weight: 700;
+    #collect_Data {
+      font-size: 1.9vw;
+      font-weight: 500;
     }
   }
   form {
-    width: 40vw;
-    height: 50vw;
+    width: 58vw;
+    height: 70vw;
     padding: 10px;
   
     // TITLE
     .head {
-      margin-bottom: 4vw;
+      margin-bottom: 4.5vw;
       .title {
-        font-size: 2vw;
+        font-size: 3.5vw;
+        color: #000;
+
         span {
-          font-size: 2.3vw;
+          font-size: 4vw;
         }
       }
     }
       
     .btn {
-      width: 35vw;
-      height: 4.5vw;
-      font-size: 1.5vw;
+      width: 100%;
+      height: 7vw;
+      font-size: 2.8vw;
+      font-weight: 600;
       background: dodgerblue;
       color: white;
       margin-top: 2px;
       padding: 1vw;
       border-radius: 7px;
       & span {
-        font-size: 1.5vw;
+        font-size: 1.9vw;
         transition: 0.25s;
       }
       &:active span {
@@ -785,25 +835,29 @@
     align-items: center;
   
     .input {
-      height: 4.3vw;
-      font-size: 1.5vw;
+      height: 6vw;
+      font-size: 2.5vw;
     }
   
     .big {
-      width: 50vw;
+      width: 100%;
       margin-top: 1vw;
+
+      &::placeholder {
+        font-size: 2vw;
+      }
     }
     
     .small {
-      width: 17.3vw;
-      margin-bottom: -3.3vw;
+      width: 50%;
+      margin-bottom: -2vw;
     }
 
     .label {
-      font-size: 1.1vw;
+      font-size: 2vw;
     }
-  
   }
+
   // LEFT ELEMENTS
   .left-item {
     visibility: hidden;
@@ -824,8 +878,8 @@
   }
 
 
+
   /* LOGIN */
-  //
   .login_slider {
     display: none;
   }
@@ -837,13 +891,6 @@
   }
   #small_screen {
     display: flex;
-
-    /* width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; */
   }
 
   #small_screen form {

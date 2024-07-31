@@ -188,10 +188,10 @@ header nav a {
 }
 
 form {
-  /* width: 24.4vw;
-  height: 28vw; */
-  width: 300px;
-  height: 400px;
+  width: 24.4vw;
+  height: 28vw;
+  /* width: 300px;
+  height: 400px; */
   backdrop-filter: blur(5px) saturate(160%);
   -webkit-backdrop-filter: blur(5px) saturate(160%);
   background: rgba(110, 110, 110, 0.2);
@@ -212,14 +212,18 @@ form .head {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 1vw;
   color: rgb(247, 136, 0);
 }
 form .head .title {
   font-family: poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.5vw;
   font-weight: 600;
-  margin-bottom: -14px;
+  margin-bottom: -1vw;
+}
+form .head .title span {
+  font-size: 1.6vw;
+  color: aliceblue;
 }
 form .head .desc {
   font-family: poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -230,8 +234,8 @@ form .head .desc a {
   color: dodgerblue;
 }
 form .btn {
-  width: 240px;
-  height: 40px;
+  width: 100%;
+  height: 2.5vw;
   padding: 1px 0px 1px;
   box-sizing: border-box;
   display: flex;
@@ -242,10 +246,10 @@ form .btn {
   outline: none;
   border: none;
   font-family: poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
+  font-size: 1vw;
+  font-weight: 500;
   border-radius: 3mm;
   cursor: pointer;
-  font-weight: 500;
   margin-top: 5px;
 }
 form .btn:hover {
@@ -258,6 +262,7 @@ form .btn:focus {
 }
 form .btn span {
   transition: 0.25s;
+  font-size: 0.7vw;
 }
 form .btn:hover span {
   transform: translateX(10px);
@@ -273,12 +278,6 @@ form #reset_btn:active {
 }
 
 .input-field {
-  /* width: 340px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 15px 0;
-  box-sizing: border-box; */
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
@@ -287,14 +286,13 @@ form #reset_btn:active {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .input-field .input {
-  height: 30px;
+  height: 2.5vw;
   font-family: poppins, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: transparent;
   border: 1px solid rgb(241, 156, 116);
-  font-size: 14px;
+  font-size: 0.8vw;
   box-sizing: border-box;
   padding: 5px 20px;
   font-weight: 500;
@@ -324,7 +322,7 @@ form #reset_btn:active {
   outline: 0.3mm solid rgba(0, 0, 0, 0.2);
 }
 .input-field .input:focus + .label {
-  top: -5px;
+  top: -0.2vw;
   opacity: 1;
   z-index: 1;
 }
@@ -356,7 +354,7 @@ form #reset_btn:active {
   transition: 0.25s ease-out;
 }
 .input-field .big {
-  width: 340px;
+  width: 100%;
   border-radius: 3mm;
   margin-bottom: -9px;
   margin-top: 12px;
@@ -364,7 +362,8 @@ form #reset_btn:active {
 .input-field .small {
   box-sizing: border-box;
   margin-bottom: -9px;
-  font-size: 0.8vw;
+  font-size: 0.7vw;
+  width: 50%;
 }
 .input-field .small:nth-child(1) {
   border-radius: 3mm 0 0 3mm;
@@ -487,37 +486,46 @@ form #reset_btn:active {
 
 @media screen and (max-width: 1024px) {
   .item img {
-    width: 300px;
+    width: 30vw;
   }
   .item button {
     background: transparent;
     color: white;
     border: solid 1px white;
     width: 16vw;
+    font-size: 2vw;
   }
   .item::before {
     left: -112%;
   }
   form {
-    width: 390px;
-    height: 450px;
+    width: 39vw;
+    height: 45vw;
   }
   form .head {
-    margin-bottom: 5px;
+    margin-bottom: 2vw;
+  }
+  form .head .title {
+    font-size: 2.2vw;
+  }
+  form .head .title span {
+    font-size: 2.4vw;
   }
   form .btn {
-    width: 330px;
+    width: 100%;
     background: dodgerblue;
     color: white;
     outline: none;
     border: none;
     border-radius: 3mm;
     cursor: pointer;
+    font-size: 2vw;
     font-weight: 500;
     margin-top: 2px;
   }
   form .btn span {
     transition: 0.25s;
+    font-size: 1.5vw;
   }
   form .btn:hover span {
     transform: translateX(10px);
@@ -525,11 +533,31 @@ form #reset_btn:active {
   form #reset_btn {
     margin-bottom: 3px;
   }
+  .input-field .input {
+    height: 4.5vw;
+    font-size: 1.5vw;
+  }
+  .input-field .input::-moz-placeholder {
+    font-size: 1.5vw;
+  }
+  .input-field .input::placeholder {
+    font-size: 1.5vw;
+  }
+  .input-field .big {
+    width: 100%;
+    margin-top: 0.5vw;
+  }
+  .input-field .small {
+    width: 50%;
+  }
+  .input-field .label {
+    font-size: 1.1vw;
+  }
   .left-item .title {
-    font-size: 65px;
+    font-size: 3vw;
   }
   .left-item #rooms {
-    font-size: 65px;
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 768px) {
@@ -568,7 +596,7 @@ form #reset_btn:active {
   }
   /* BOOKING */
   .top {
-    font-size: 70px;
+    font-size: 8vw;
   }
   .item {
     width: 100%;
@@ -576,7 +604,7 @@ form #reset_btn:active {
   }
   .item button {
     padding: 10px 10px;
-    font-size: 11px;
+    font-size: 2vw;
     margin-top: 50px;
   }
   .item::before {
@@ -584,37 +612,39 @@ form #reset_btn:active {
     width: 100%;
   }
   .item.active img {
-    width: 200px;
+    width: 30vw;
     border-radius: 10%;
   }
   .correct #collect_Date {
-    font-size: 10px;
+    font-size: 1vw;
     font-weight: 700;
   }
   form {
-    width: 250px;
-    height: 340px;
+    width: 36vw;
+    height: 43vw;
+    padding: 3vw;
   }
   form .head {
-    margin-bottom: 0px;
+    margin-bottom: 3vw;
   }
   form .head .title {
-    font-size: 17px;
+    font-size: 2vw;
   }
   form .head .title span {
-    font-size: 20px;
+    font-size: 2.3vw;
   }
   form .btn {
-    width: 190px;
-    height: 30px;
+    width: 100%;
+    height: 4vw;
     background: dodgerblue;
-    margin-top: 2px;
-    padding: 7px;
+    margin-top: 0.2vw;
+    padding: 1vw;
     border-radius: 5px;
+    font-size: 1.7vw;
   }
   form .btn span {
     transition: 0.25s;
-    font-size: 15px;
+    font-size: 1.7vw;
   }
   form .btn:hover span {
     transform: translateX(10px);
@@ -623,29 +653,30 @@ form #reset_btn:active {
     margin-bottom: 3px;
   }
   .input-field .input {
-    height: 30px;
-    font-size: 10px;
+    height: 4vw;
+    font-size: 1.2vw;
   }
   .input-field .big {
-    width: 360px;
+    width: 100%;
+    margin-top: 0.5vw;
   }
   .input-field .small {
-    width: 120px;
+    width: 50%;
   }
   .input-field .label {
-    font-size: 7px;
+    font-size: 1vw;
   }
   .left-item {
     padding: 0 10px;
   }
   .left-item .title {
-    font-size: 40px;
+    font-size: 3vw;
   }
   .left-item #rooms {
-    font-size: 30px;
+    font-size: 3vw;
   }
   .left-item .text {
-    font-size: 15px;
+    font-size: 1.7vw;
   }
   /* LOGIN */
   .login_slider form {
@@ -988,52 +1019,61 @@ form #reset_btn:active {
     height: 100%;
   }
   .item button {
-    font-size: 2vw;
-    padding: 1.5vw;
+    display: flex;
+    justify-content: center;
+    font-size: 2.9vw;
+    padding: 3vw 20vw 3vw 20vw;
+    transition: 0.05s ease-in-out;
+    background: rgba(224, 63, 0, 0.7137254902);
     border: none;
-    background: #fff;
-    color: #000;
+    color: #ffffff;
+    font-weight: 800;
   }
-  .item button:active {
-    background: transparent;
-    border: solid 1px white;
-    transition: all 0.1s ease-in-out;
+  .item button:focus {
+    background: rgba(133, 38, 0, 0.7137254902);
+    border: none;
     color: #ffffff;
   }
   .item::before {
     left: -100%;
     width: 100%;
+    background: none;
     border: none;
   }
   .item.active {
     width: 0%;
   }
   .item.active img {
-    width: 40vw;
+    width: 60vw;
     border-radius: 10%;
   }
-  .correct #collect_Date {
-    font-size: 1.3vw;
-    font-weight: 700;
+  .item.active img:active {
+    width: 65vw;
+  }
+  .correct #collect_Data {
+    font-size: 1.9vw;
+    font-weight: 500;
   }
   form {
-    width: 40vw;
-    height: 50vw;
+    width: 58vw;
+    height: 70vw;
     padding: 10px;
   }
   form .head {
-    margin-bottom: 4vw;
+    margin-bottom: 4.5vw;
   }
   form .head .title {
-    font-size: 2vw;
+    font-size: 3.5vw;
+    color: #000;
   }
   form .head .title span {
-    font-size: 2.3vw;
+    font-size: 4vw;
   }
   form .btn {
-    width: 35vw;
-    height: 4.5vw;
-    font-size: 1.5vw;
+    width: 100%;
+    height: 7vw;
+    font-size: 2.8vw;
+    font-weight: 600;
     background: dodgerblue;
     color: white;
     margin-top: 2px;
@@ -1041,7 +1081,7 @@ form #reset_btn:active {
     border-radius: 7px;
   }
   form .btn span {
-    font-size: 1.5vw;
+    font-size: 1.9vw;
     transition: 0.25s;
   }
   form .btn:active span {
@@ -1055,19 +1095,25 @@ form #reset_btn:active {
     align-items: center;
   }
   .input-field .input {
-    height: 4.3vw;
-    font-size: 1.5vw;
+    height: 6vw;
+    font-size: 2.5vw;
   }
   .input-field .big {
-    width: 50vw;
+    width: 100%;
     margin-top: 1vw;
   }
+  .input-field .big::-moz-placeholder {
+    font-size: 2vw;
+  }
+  .input-field .big::placeholder {
+    font-size: 2vw;
+  }
   .input-field .small {
-    width: 17.3vw;
-    margin-bottom: -3.3vw;
+    width: 50%;
+    margin-bottom: -2vw;
   }
   .input-field .label {
-    font-size: 1.1vw;
+    font-size: 2vw;
   }
   .left-item {
     visibility: hidden;
@@ -1097,12 +1143,6 @@ form #reset_btn:active {
   }
   #small_screen {
     display: flex;
-    /* width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative; */
   }
   #small_screen form {
     width: 70vw;
